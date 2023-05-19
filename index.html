@@ -6,7 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      .course-card
+      {
+        width: 18rem; 
+        height: 10rem; 
+        background-image: linear-gradient(rgb(255, 193, 193), rgb(185, 185, 185));
+      }
+      .collapsing 
+      {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+        transform-origin: bottom;
+      }
 
+      .collapsing.show 
+      {
+        height: auto;
+        transform: scaleY(1);
+      }
+
+      .blink{
+  
+  
+ 
+  animation: blink 5s infinite;
+}
+@keyframes blink{
+  0% {
+    background: rgb(233, 232, 232);
+  }
+  25% {
+    background: rgb(240, 240, 240);
+  }
+  50% {
+    background: rgb(218, 218, 218);
+  }
+  75% {
+    background: rgb(235, 235, 235);
+  }
+  100% {
+    background: rgb(231, 231, 231);
+  }
+}
+@-webkit-keyframes blink{
+  0% {
+    background: rgb(231, 231, 231);
+  }
+  25% {
+    background: rgb(231, 231, 231);
+  }
+  50% {
+    background: rgb(231, 231, 231);
+  }
+  75% {
+    background: rgb(231, 231, 231);
+  }
+  
+  100% {
+    background: rgb(231, 231, 231);
+  }
+}
+
+    </style>
 </head>
 <body>
 
@@ -14,7 +77,7 @@
     <header class="bg-info " style="position: fixed; width: 100%; z-index: 1;">
         <div class="row text-white">
             <div class="col-md-6 col-9 p-3 pl-5">
-                <h1>Dony</h1>
+                <h1>Dony Larsan</h1>
             </div>
             <div class="col-md-6 col-3 my-auto ">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -29,14 +92,24 @@
                         <li class="nav-item active ">
                           <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="#prog_lan">Programmin Languages</a>
+                        <li class="nav-item active ">
+                          <a class="nav-link text-white" href="#courses">courses <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active ">
+                          <a class="nav-link text-white" href="#Education">Education <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white" href="#">Experience</a>
+                          <a class="nav-link text-white" href="#prog_lan">Skills</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white" href="#contact">Contact </a>
+                          <a class="nav-link text-white" href="#"></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#project">Project </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#resume">Resume </a>
                         </li>
                       </ul>
                       
@@ -45,25 +118,116 @@
             </div>
         </div>
     </header>
+    
 
 
 
     <!-- intro section -->
 
-    <section class="" id="home" style="padding-top: 10em;">
+    <section class="" id="home" style="padding-top: 10em; background-color: rgb(235, 235, 235);">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="images/flower.jpg" alt="" class="img-fluid rounded-circle">
-          </div>
+        <div class="row align-items-center justify-content-center">
+          
+            <div class="col-md-6 text-center"> <!-- Added text-center class -->
+              <img src="images/flower.jpg" alt="" class="img-fluid rounded-circle" style="width: 10rem; display: block; margin: 0 auto;">
+            </div>
           <div class="col-md-6 text-center">
-            <h4 class="pt-4">Python Developer intern trainee <br> QIS Acadamy, Trivandrum</h4>
+            <h4 class="pt-1" style="text-transform: uppercase;">Python Developer intern trainee <br> QIS Acadamy, Trivandrum</h4>
+          </div>
+        </div>
+      </div>
+        
+      <div class="container text-center pt-5 " id="Contact">
+        <div style="background-color: aquamarine;">
+          <a href="tel:+917510804396" style="text-decoration: none; padding: 10px;"><img src="images/phone icon.png" alt="" style="width: 15px;"></i>+91 7510804396</a>
+          <a href="mailto:donylarsan4842@gmail.com" style="text-decoration: none; padding: 10px;"><img src="images/email.png" alt="" style="width: 15px;"> donylarsan4842@gmail.com</a>
+          <!-- <a href="" style="text-decoration: none;">L P House Potavila Kudayal PO, Thiruvananthapuram</a> -->
+        </div>
+      </div>
+      <hr>
+    </section>
+    
+    
+
+    <!-- Recent cources -->
+    <section class="bg-light p-5 " id="courses">
+      <div class="container">
+        <h1 class="text-center">Courses</h1>
+        <div class="row p-5">
+          <div class="col-md-4">
+            
+            <div class="card course-card" >
+              <div class="card-body">
+                <h5 class="card-title">QIS Acadamy</h5>
+                <h6 class="card-subtitle mb-2 text-muted pt-4">Python intern trainee at QIS Acadamy</h6>
+                <p class="card-text"></p>
+                <a href="#" class="card-link">Card link</a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            
+            <div class="card course-card" >
+              <div class="card-body">
+                <h5 class="card-title">DDU GKY</h5>
+                <h6 class="card-subtitle mb-2 text-muted pt-4">Junior software developer cource from DDU GKY</h6>
+                <p class="card-text"></p>
+                <a href="#" class="card-link">Card link</a>
+                
+              </div>
+            </div>
+          </div><div class="col-md-4">
+            
+            <div class="card course-card" >
+              <div class="card-body">
+                <h5 class="card-title">Inmakes</h5>
+                <h6 class="card-subtitle mb-2 text-muted pt-4">python courses from inmakes</h6>
+                <p class="card-text"></p>
+                <a href="#" class="card-link">Card link</a>
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-
+    <!-- Education -->
+    <section id="Education" style="background-color: rgb(255, 240, 222);">
+      
+      <div class="container p-5">
+        <h1 class="text-center">Education</h1>
+      </div>
+      
+      <div class="container col-12 ">
+        <div class="container text-center align-items-center">
+          <div class="card card-shadow" >
+          <h3>Electrical and Electronics Engineering</h3>
+          <h5>2018</h5>
+          <p>Narayanaguru College of Engineering, Padanthalumoodu</p>
+        </div>
+      </div>
+      <div class="container p-4 col-12">
+        <div class="container text-center align-items-center">
+          <div class="card card-shadow" >
+          <h3>Higher Secondary School</h3>
+          <h5>2014</h5>
+          <p>St. John's Higher Secondary School, Undencode</p>
+        </div>
+      </div>
+      <div class="container p-4 col-12">
+        <div class="container text-center align-items-center">
+          <div class="card card-shadow" >
+          <h3>SSLC</h3>
+          <h5>2018</h5>
+          <p>St. John's Higher Secondary School, Undencode</p>
+        </div>
+      </div>
+    
+  </div>
+     
+    </section>
     <!-- services section  -->
     <section class="bg-light p-4" id="prog_lan">
       <div class="container">
@@ -74,7 +238,7 @@
               <img class="card-img-top" src="https://images.unsplash.com/photo-1649180556628-9ba704115795?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHl0aG9uJTIwcHJvZ3JhbW1pbmclMjBsYW5ndWFnZSUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Card image cap" style="height: 13em;">
               <div class="card-body" s>
                 <h5 class="card-title">Python</h5>
-                <p class="card-text">Good understanding of software development lifecycle and Agile methodologies.</p>
+                <p class="card-text">Proficient in Python programming language with a solid understanding of its core concepts and syntax</p>
               </div>
             </div>
           </div>
@@ -83,69 +247,159 @@
               <img class="card-img-top" src="https://i.pinimg.com/originals/6e/12/6a/6e126a9ace040280e45f8144cf0cb2c8.jpg" alt="Card image cap" style="height: 13em;">
               <div class="card-body">
                 <h5 class="card-title">Java</h5>
-                <p class="card-text">Experienced in Java programming with expertise in developing applications.</p>
+                <p class="card-text">Basic Java Programming: Proficient in foundational Java programming concepts and syntax. </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 pt-4">
             <div class="card text-center" style="height: 22em;">
-              <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2thMWKDDhmfOMOZyWjJFmWTZC6luXl3YmaLkqOFk-&s" alt="Card image cap" style="height: 13em;">
+              <img class="card-img-top" src="images/C++.jpg" alt="Card image cap" style="height: 13em;">
               <div class="card-body">
                 <h5 class="card-title">C++</h5>
-                <p class="card-text">proficient in C++ programming with foundational understanding of OOP.</p>
+                <p class="card-text">Skilled in developing basic programs and implementing data structures using C++. </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 pt-4">
             <div class="card text-center" style="height: 22em;">
-              <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2thMWKDDhmfOMOZyWjJFmWTZC6luXl3YmaLkqOFk-&s" alt="Card image cap" style="height: 13em;">
+              <img class="card-img-top" src="images/C-Programming-1.jpg" alt="Card image cap" style="height: 13em;">
               <div class="card-body">
-                <h5 class="card-title">C++</h5>
-                <p class="card-text">proficient in C++ programming with foundational understanding of OOP.</p>
+                <h5 class="card-title">C Programming</h5>
+                <p class="card-text">Experienced in implementing algorithms and solving programming challenges</p>
               </div>
             </div>
           </div>
+          
+        </div><hr>
+        <div class="container">
+          <h3>Framework</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pt-4">
+            <div class="card text-center" id="djhead" style="height: 31em;">
+              <img class="card-img-top" src="images/django-logo.png" alt="Card image cap" style="height: 50%;">
+              <div class="card-body">
+                <h3 class="card-title">Django</h3>
+                
+                <p class="card-text">As an aspiring web developer, I am enthusiastic about learning and working with Django, a popular Python web framework. Although I am at the beginning of my journey, I am committed to growing my skills and gaining hands-on experience in Django development.</p>
+                <p class="card-title" id="django-heading" style="text-align: left;">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseone" aria-expanded="true" aria-controls="collapseone" style="text-decoration: none;  text-align: left;">
+                    My current Knowledge
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 p-4">
+            <div id="collapseone" class="collapse text-white " aria-labelledby="django-heading" data-parent="#djhead" style="background-color: rgba(16, 62, 46, 0.788); border-radius: 5px;">
+              <h3 class="text-center">My current Knowledge</h3>
+              <div class="container p-4 " style="padding-top: 20px;">
+                <ul>
+                  <li><b> Foundational Concepts:</b> I have acquired a solid understanding of the fundamental concepts of Django, including models, views, templates, and URL routing</li><br>
+                  <li><b> Building Basic Web Applications:</b> I have practiced creating simple web applications using Django</li><br>
+                  <li><b> Working with Templates:</b> I have gained proficiency in using Django's template system to render dynamic web pages, allowing for the display of data and the creation of user interfaces</li><br>
+                  <li><b> Learning Resources:</b> I have actively engaged with online tutorials, documentation, and educational materials to enhance my understanding of Django's core concepts and best practices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+
           
         </div>
       </div>
     </section>
 
 
-    <!-- section contact  -->
-    <section class="p4 bg-light" id="contact">
-      <div class="container">
-        <h1 class="text-center">Contact </h1>
-        <div class="row">
-          <div class="col-md-12">
-            <form>
-            
-              <div class="row col-md-12">
-                <div class="form-group col-md-6">
-                  <label for="">Name</label>
-                  <input type="text" class="form-control "  placeholder="Name">
+    <section class="" id="project" style="background-color: rgb(43, 29, 58);">
+      <!-- style="background-color: rgb(207, 206, 206);" -->
+      <div class="container p-5">
+        <div>
+          <h1 class="text-center text-white">Project</h1>
+        </div>
+        <div class="p-5 text-white">
+          <h4>E-commerce Website using Django.</h4>
+          <p>I have developed an e-commerce website using Django, where I implemented several key features to enhance the user experience. These features include category pages, detailed product pages, pagination, search functionality, and a cart page.</p>
+          <p>In the development process, I utilized Django's powerful admin panel to efficiently manage categories and products, making it easier to add, update, and remove items from the website.</p>
+
+          <p>To ensure a seamless user experience, I created a responsive and user-friendly interface using a combination of HTML, CSS, and JavaScript. The website adapts well to different screen sizes and devices, allowing users to browse and purchase products conveniently.</p>
+        
+          <p>By incorporating these functionalities and designing an intuitive interface, I aimed to deliver an engaging and efficient e-commerce experience for users.</p>
+          <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo" style="text-decoration: none;  text-align: left;">
+            See project Gallery
+          </button>
+          
+          <a href="https://github.com/donylarsan/ecommers" class="btn btn-outline-secondary" style="text-decoration: none; margin-left: 30px; " target="_blank">Check code on Github</a>
+        </div>
+        <div id="collapsetwo" class="collapse" aria-labelledby="django-heading" data-parent="#project">
+          <div class="container p-4" style="padding-top: 20px; background-color: rgba(16, 62, 46, 0.788); border-radius: 5px;">
+            <h3 class="text-center text-white">Project Gallery</h3>
+            <div class="pt-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Home Page</h3>
+                  <img src="images/home-page.png" alt="" width="100%">
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control"  placeholder="Email">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Products Arranged by catogery</h3>
+                  <img src="images/arra by catogery.png" alt="" width="100%">
                 </div>
               </div>
-              <div class="form-group">
-                <label for="inputAddress">Place</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Place">
+              <div class="row pt-4">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Searching Page</h3>
+                  <img src="images/search.png" alt="" width="100%">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Detailed Page for each product</h3>
+                  <img src="images/detail pg.png" alt="" width="100%">
+                </div>
               </div>
-              <div class="form-group">
-                <label for="inputAddress2">Comment</label>
-                <textarea name="" class="form-control" placeholder="Type your Message here"></textarea>             
+              <div class="row pt-4">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Notify Out of stock</h3>
+                  <img src="images/outof_stock.png" alt="" width="100%">
+                  <p class="text-white">If a product is not available it notify out of stock and can't be added to cart</p>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Cart page</h3>
+                  <img src="images/cart page.png" alt="" width="100%">
+                  <ul class="text-white">
+                    <li>User can add or remove products that are added to cart from cart page</li>
+                    <li>Can delete a product from cart page</li>
+                    <li>can see the total amount at right side</li>
+                  </ul>                
+                </div>
               </div>
-              <div class="form-group text-center pt-5">
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
-              </div>
-            </form>  
+
+              
+              
+            </div>
           </div>
         </div>
-        </div>
+      </div>
+    </section>   
+    
+    
+    <section id="resume">
+      <div class="text-center">
+        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#pdfCollapse" aria-expanded="false" aria-controls="pdfCollapse" style="width: 100%;">
+          <h5>My Resume</h5>
+        </button>
+      </div>
+      <div id="pdfCollapse" class="collapse">
+        <embed src="images/Dony Larsan L P.pdf" type="application/pdf" width="100%" height="1200px">
       </div>
     </section>
+
+
+    
+    
+
+
+
+    
 
     <!-- footer -->
     <footer>
@@ -168,5 +422,34 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b80017f808.js" crossorigin="anonymous"></script>
+    <script>
+      function addDelay() {
+        var container = document.getElementById("courses");
+        var win_height = window.innerHeight;
+        var cont_height = container.clientHeight;
+        var scroll_pos = window.scrollY || window.pageYOffset;
+    
+        if (scroll_pos + win_height >= cont_height) {
+          setTimeout(function() {
+            var newElem = document.createElement('div');
+            newElem.className = "box";
+            container.appendChild(newElem);
+          }, 200); // Delay of 200 milliseconds
+        }
+      }
+    
+      window.addEventListener("scroll", function() {
+        clearTimeout(this.scrollTimeout);
+        this.scrollTimeout = setTimeout(addDelay, 200);
+      });
+    </script>
+    <script>
+      // When the Django heading is clicked
+      $("#django-heading").click(function() {
+        // Show the hidden window
+        $("#django-details").fadeIn();
+      });
+    </script>
+    
 </body>
 </html>
