@@ -1,0 +1,97 @@
+.nav-link {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #fcf9f9; /* Change the color to your desired underline color */
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease; /* Adjust the animation speed as needed */
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(.8);
+  }
+
+.section
+{
+  padding-top: 5em;
+}
+
+.course-card
+{
+  border: 0;
+}
+
+
+.card-c-logo {
+  width: 100%; /* Adjust the size of the logo */
+  height: 100%; /* Adjust the size of the logo */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-c-logo {
+  opacity: 0.10;
+}
+
+.card-c-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+
+
+.card:hover .card-c-body {
+  width: 110%;
+  height: 110%;
+  opacity: .8;
+  background-color: rgb(46, 21, 21);
+}
+
+.card-c-title,
+.card-c-subtitle,
+.card-c-text,
+.card-c-link {
+  opacity: 1;
+  /* background-color: rgb(209, 209, 224); */
+  color: rgb(255, 255, 255);
+  
+  padding: 0px;
+  transition: opacity 1s;
+}
+
+
+.card-c-subtitle
+{
+  color: beige;
+  font: 18px sans-serif;
+}
+
+
+.card-c-title
+{
+  font-weight: bold ; 
+  letter-spacing: .25em; 
+  text-transform: uppercase;
+}
+
+
+.card-shadow {
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.4); /* Example shadow style */
+}
