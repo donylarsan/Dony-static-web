@@ -72,6 +72,7 @@
 }
 
     </style>
+    
 </head>
 <body>
 
@@ -107,8 +108,16 @@
                           <a class="nav-link text-white" href="#"></a>
                         </li>
                         
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="#project">Project </a>
+                        <!-- <li class="nav-item dropdown">
+                          <a class="nav-link text-white dropdown-toggle" href="#project" id>Project </a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(247, 236, 223); border: 0px; border-radius: 4px;">
+                            <a class="dropdown-item" href="#E-Commerse">E-Commerse project</a>
+                            <a class="dropdown-item" href="#ToDo">ToDo project</a>
+                            
+                          </div>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link text-white" href="#resume">Resume </a>
@@ -120,9 +129,9 @@
             </div>
         </div>
     </header>
+                                          
+
     
-
-
 
     <!-- intro section -->
 
@@ -138,6 +147,7 @@
           </div>
         </div>
       </div>
+    </div>
         
       <div class="container text-center pt-5 " id="Contact">
         <div style="background-color: aquamarine;">
@@ -249,7 +259,7 @@
         <h1 class="text-center">Programming Languages</h1>
         <div class="row p-4" style="height: 24rem;">
           <div class="col-md-4 pt-4">
-            <div class="card text-center pro_card" style="height: 22em; position: relative;" >
+            <div class="card text-center pro_card card-shadow" style="height: 22em; position: relative;" >
               <img class="card-img-top" src="https://images.unsplash.com/photo-1649180556628-9ba704115795?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHl0aG9uJTIwcHJvZ3JhbW1pbmclMjBsYW5ndWFnZSUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Card image cap" style="height: 13em;">
               <div class="card-body" >
                 <h5 class="card-title">Python</h5>
@@ -258,7 +268,7 @@
             </div>
           </div>
           <div class="col-md-4 pt-4">
-            <div class="card text-center pro_card" style="height: 22em;" >
+            <div class="card text-center pro_card card-shadow" style="height: 22em;" >
               <img class="card-img-top" src="https://i.pinimg.com/originals/6e/12/6a/6e126a9ace040280e45f8144cf0cb2c8.jpg" alt="Card image cap" style="height: 13em;">
               <div class="card-body">
                 <h5 class="card-title">Java</h5>
@@ -267,7 +277,7 @@
             </div>
           </div>
           <div class="col-md-4 pt-4">
-            <div class="card text-center pro_card" style="height: 22em;" >
+            <div class="card text-center pro_card card-shadow " style="height: 22em;" >
               <img class="card-img-top" src="images/C++.jpg" alt="Card image cap" style="height: 13em;">
               <div class="card-body">
                 <h5 class="card-title">C++</h5>
@@ -278,7 +288,7 @@
         </div>
         <div class="row p-4" style="height: 24rem;">
           <div class="col-md-4 pt-4">
-            <div class="card text-center pro_card" style="height: 22em;">
+            <div class="card text-center pro_card card-shadow" style="height: 22em;">
               <img class="card-img-top" src="images/C-Programming-1.jpg" alt="Card image cap" style="height: 13em;">
               <div class="card-body">
                 <h5 class="card-title">C Programming</h5>
@@ -293,8 +303,8 @@
         </div>
         <div class="row">
           <div class="col-md-6 pt-4">
-            <div class="card text-center" id="djhead" style="height: 31em;">
-              <img class="card-img-top" src="images/django-logo.png" alt="Card image cap" style="height: 50%;">
+            <div class="card text-center card-dj" id="djhead" style="height: 31em;">
+              <img class="card-img-top dj-img" src="images/django-logo.png" alt="Card image cap" style="height: 50%;">
               <div class="card-body">
                 <h3 class="card-title">Django</h3>
                 
@@ -329,13 +339,16 @@
     </section>
 
 
-    <section class="section" id="project" style="background-color: rgb(43, 29, 58); padding-top: 4em;">
+    <section class="section" id="E-Commerse" style="background-color: rgb(43, 29, 58); padding-top: 4em;">
       <!-- style="background-color: rgb(207, 206, 206);" -->
       <div class="container-fluid p-5">
         <div>
           <h1 class="text-center text-white">Project</h1>
         </div>
-        <div class="p-5 text-white text-justify">
+
+        <!-- Ecommers Project -->
+
+        <div class="p-5 text-white text-justify " id="">
           <h4>E-commerce Website using Django.</h4>
           <p>I have developed an e-commerce website using Django, where I implemented several key features to enhance the user experience. These features include category pages, detailed product pages, pagination, search functionality, and a cart page.</p>
           <p>In the development process, I utilized Django's powerful admin panel to efficiently manage categories and products, making it easier to add, update, and remove items from the website.</p>
@@ -394,11 +407,82 @@
                   </ul>                
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <hr style="background-color: aliceblue;">
+
+        <!-- ToDo project -->
+
+        <div class="p-5 text-white text-justify" id="ToDo">
+          <h4>Todo Website using Django.</h4>
+          <p>I have developed a dynamic Todo application using Django for my online resume. The application provides a user-friendly interface where you can easily manage your tasks. On the home page, you can add new todos and they will appear on the right half of the page as active todos</p>
+
+          <p>To provide users with a smooth and user-friendly experience, I have designed a responsive interface that seamlessly adapts to various screen sizes and devices. By incorporating a combination of HTML, CSS, and JavaScript, the website ensures optimal usability and convenience for browsing and purchasing products.</p>
+        
+          
+          <div class="row text-center">
+            <div class="col-md-4 p-2">
+              <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree" style="text-decoration: none;  text-align: left;">
+                See project Gallery
+              </button>
+            </div>
+            <div class="col-md-4 p-2">
+              <!-- <a href="https://github.com/donylarsan/ecommers" class="btn btn-outline-secondary" style="text-decoration: none;  " target="_blank">Check code on Github</a> -->
+            </div>
+          </div>
+        </div>
+        <div id="collapsethree" class="collapse" aria-labelledby="django-heading" data-parent="#project">
+          <div class="container p-4" style="padding-top: 20px; background-color: rgba(16, 62, 46, 0.788); border-radius: 5px;">
+            <h3 class="text-center text-white">Project Gallery</h3>
+            <div class="pt-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Home Page</h3>
+                  <img src="images/todo Home page.png" alt="" width="100%">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Adding a TODO</h3>
+                  <img src="images/todo add  todo.png" alt="" width="100%">
+                  <ul  class="text-white">
+                    <li>A todo can be added by entering the fields.</li>
+                    <li>The active todos can be see at the right half of the page.</li>
+                  </ul>
+                  <p class="text-white"> </p>
+                  <p class="text-white"> </p>
+
+
+                </div>
+              </div>
+              <div class="row pt-4">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Adding a new TODO</h3>
+                  <img src="images/todo adding new.png" alt="" width="100%">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Updating</h3>
+                  <img src="images/todo update.png" alt="" width="100%">
+                  <p class="text-white">Created Todos can be updated if needed</p>
+                </div>
+              </div>
+              <div class="row pt-4">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Deleting</h3>
+                  <img src="images/todo delete.png" alt="" width="100%">
+                  <p class="text-white">Upon completion the todo can be deleted</p>
+                </div>
+                
+              </div>
 
               
               
             </div>
           </div>
+
+          
+
+
         </div>
       </div>
     </section>   
@@ -446,6 +530,7 @@
     <script src="https://kit.fontawesome.com/b80017f808.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     
     
 </body>
