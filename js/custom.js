@@ -44,16 +44,53 @@ function addDelay() {
   });
   
 
+  
   $(".edu_card").mouseenter(function() {
     $(this).stop().animate({
       
-      padding: '5px'
+      marginLeft:'15px',
+      marginRight: '15px',
+      // width : '99%',
+      height:'9em'
     }, 300); // Adjust the duration (in milliseconds) as needed
   });
 
   $(".edu_card").mouseleave(function() {
     $(this).stop().animate({
       
-      padding: '0px'
-    }, 3000); // Adjust the duration (in milliseconds) as needed
+      marginLeft:'0em',
+      marginRight: '0px',
+      // width : '100%',
+      height: '9em'
+    }, 300); // Adjust the duration (in milliseconds) as needed
   });
+
+  $(".dj-img").mouseenter(function()
+  {
+    $(this).stop().animate(
+      {
+        marginLeft:'5px',
+        marginRight: '5px',
+        marginTop: '5px',
+        marginBottom: '5px',
+        width:"98%",
+        height:'49%',
+        
+      }
+    )
+    $('card-dj').css('background-color', 'blue')
+  })
+
+  $(".dj-img").mouseleave(function()
+  {
+    $(this).stop().animate(
+      {
+        marginLeft:'0px',
+        marginRight: '0px',
+        marginTop: '0px',
+        marginBottom: '0px',
+        width: '100%',
+        height:'50%'
+      }
+    )
+  })
