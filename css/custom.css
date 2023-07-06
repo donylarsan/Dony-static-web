@@ -10,10 +10,10 @@
     bottom: -2px;
     width: 100%;
     height: 2px;
-    background-color: #fcf9f9; /* Change the color to your desired underline color */
+    background-color: #fcf9f9; 
     transform: scaleX(0);
     transform-origin: center;
-    transition: transform 0.3s ease; /* Adjust the animation speed as needed */
+    transition: transform 0.3s ease; 
   }
   
   .nav-link:hover::after {
@@ -32,8 +32,8 @@
 
 
 .card-c-logo {
-  width: 100%; /* Adjust the size of the logo */
-  height: 100%; /* Adjust the size of the logo */
+  width: 100%; 
+  height: 100%; 
   position: relative;
   z-index: 2;
   opacity: 1;
@@ -93,7 +93,7 @@
 
 
 .card-shadow {
-  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.4); /* Example shadow style */
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.4); 
 }
 
 
@@ -101,5 +101,34 @@
 .edu_card
 {
   height: 9em;
-  position: ;
+ 
 }
+
+
+
+
+.course-card
+{
+  width: 18rem; 
+  height: 10rem; 
+  background-image: linear-gradient(rgb(255, 193, 193), rgb(185, 185, 185));
+}
+.collapsing 
+{
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  transform-origin: bottom;
+}
+
+.collapsing.show 
+{
+  height: auto;
+  transform: scaleY(1);
+}
+
+      
+  
+  
+ 
+  
