@@ -8,70 +8,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <style>
-      .course-card
-      {
-        width: 18rem; 
-        height: 10rem; 
-        background-image: linear-gradient(rgb(255, 193, 193), rgb(185, 185, 185));
-      }
-      .collapsing 
-      {
-        height: 0;
-        overflow: hidden;
-        transition: height 0.3s ease-in-out;
-        transform-origin: bottom;
-      }
-
-      .collapsing.show 
-      {
-        height: auto;
-        transform: scaleY(1);
-      }
-
-      .blink{
-  
-  
- 
-  animation: blink 5s infinite;
-}
-@keyframes blink{
-  0% {
-    background: rgb(233, 232, 232);
-  }
-  25% {
-    background: rgb(240, 240, 240);
-  }
-  50% {
-    background: rgb(218, 218, 218);
-  }
-  75% {
-    background: rgb(235, 235, 235);
-  }
-  100% {
-    background: rgb(231, 231, 231);
-  }
-}
-@-webkit-keyframes blink{
-  0% {
-    background: rgb(231, 231, 231);
-  }
-  25% {
-    background: rgb(231, 231, 231);
-  }
-  50% {
-    background: rgb(231, 231, 231);
-  }
-  75% {
-    background: rgb(231, 231, 231);
-  }
-  
-  100% {
-    background: rgb(231, 231, 231);
-  }
-}
-
-    </style>
+    
     
 </head>
 <body>
@@ -114,6 +51,7 @@
                         <li class="nav-item dropdown">
                           <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(247, 236, 223); border: 0px; border-radius: 4px;">
+                            <a class="dropdown-item" href="#Hospital">Hospital Website</a>
                             <a class="dropdown-item" href="#E-Commerse">E-Commerse project</a>
                             <a class="dropdown-item" href="#ToDo">ToDo project</a>
                             
@@ -339,16 +277,89 @@
     </section>
 
 
-    <section class="section" id="E-Commerse" style="background-color: rgb(43, 29, 58); padding-top: 4em;">
+    <section class="section" id="Hospital" style="background-color: rgb(43, 29, 58); padding-top: 4em;">
       <!-- style="background-color: rgb(207, 206, 206);" -->
       <div class="container-fluid p-5">
         <div>
           <h1 class="text-center text-white">Project</h1>
         </div>
 
-        <!-- Ecommers Project -->
+        
+        <!-- Hospital Project -->
 
         <div class="p-5 text-white text-justify " id="">
+          <h4>Website for Hospital </h4>
+          <p>A website have developed using Django. <br><br>
+            <b>Features Included</b>
+            <ul>
+              <li>User login, Signup</li>
+              <li>Detailed page to show various mission, facilities, acchievements of the hospital</li>
+              <li>Admin can add, delete, update departments and Doctors using Django's admin panel</li>
+              <li>Pages for each department showing the doctors list in each department and their availability</li>
+              <li>User can book appointment by checking the availability of doctors</li>
+            </ul>
+
+          <p>I have used HTML, CSS, and JavaScript to design user interface and the website is adaptive for diffenrt screen sizes</p>
+        
+          <div class="row text-center">
+            <div class="col-md-4 p-2">
+              <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree" style="text-decoration: none;  text-align: left;">
+                See project Gallery
+              </button>
+            </div>
+            <div class="col-md-4 p-2">
+              <!-- <a href="https://github.com/donylarsan/ecommers" class="btn btn-outline-secondary" style="text-decoration: none;  " target="_blank">Check code on Github</a> -->
+            </div>
+          </div>
+        </div>
+        <div id="collapsethree" class="collapse" aria-labelledby="django-heading" data-parent="#project">
+          <div class="container p-4" style="padding-top: 20px; background-color: rgba(16, 62, 46, 0.788); border-radius: 5px;">
+            <h3 class="text-center text-white">Project Gallery</h3>
+            <div class="pt-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Home Page</h3>
+                  <img src="images\Hospital-home page.png" alt="" width="100%">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Detailed About Page</h3>
+                  <img src="images\Hospital about page.jpg" alt="" width="100%">
+                </div>
+              </div>
+              <div class="row pt-4">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Departments</h3>
+                  <img src="images\Hospital department.png" alt="" width="100%">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Appointment Booking</h3>
+                  <img src="images\Hospital booking.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="row pt-4">
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Sign in </h3>
+                  <img src="images\hospital signin.png" alt="" width="100%">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="text-center text-white">Signup</h3>
+                  <img src="images\hospital signup.png" alt="" width="100%">
+                                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr style="background-color: aliceblue;">
+        
+
+
+
+
+        <!-- Ecommers Project -->
+
+        <div class="p-5 text-white text-justify " id="E-Commerse">
           <h4>E-commerce Website using Django.</h4>
           <p>I have developed an e-commerce website using Django, where I implemented several key features to enhance the user experience. These features include category pages, detailed product pages, pagination, search functionality, and a cart page.</p>
           <p>In the development process, I utilized Django's powerful admin panel to efficiently manage categories and products, making it easier to add, update, and remove items from the website.</p>
